@@ -1,0 +1,368 @@
+{% extends "base.html" %}
+{% block content %}
+<body>
+  <div class="mainH1" id="mainH1" >  
+      <h1>Important Concepts</h1>
+      <a href="/">Back Home Page</a>  
+  </div>
+  <div class="subtitle" id="Stage0">
+    <h2> Stage 0: The Basics </h2>
+    <div class="summary" id="Stage0_web">
+      <div class="sum_title">
+        How the Web Works
+      </div>
+      <div class="sum_detail">
+        <p>
+          When a person goes to a web page like www.google.com, their computer sends a <em>HTTP Request</em> to a <em>server</em>.
+        </p>
+        <p>
+          The server finds the appropriate HTML document and sends it back to the user's computer where a <em>web browser</em> interprets the page and displays it on the user's screen.
+          <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/e-48329854/m-48480496">This video</a> does a good job of explaining more if you can view it.
+        </p>
+      </div>
+    </div>
+    <div class="summary" id="Stage0_HTML">
+      <div class="sum_title">
+        HTML
+      </div>
+      <div class="sum_detail">
+        <p>
+          HTML, <em>Hypertext Markup Language,</em> documents form the majority of the content on the web.
+        </p>
+        <p>
+          HTML documents contain <em>text content</em> which describes "what you see" and <em>CSS</em> which describes "how it looks". <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48724340">This video</a> gives a good overview
+          if you can view it.
+        </p>
+      </div>
+    </div>
+    <div class="summary" id="Stage0_Tags">
+      <div class="sum_title">
+        Tags and Elements
+      </div>
+      <div class="sum_detail">
+        <p>
+          HTML documents are made of HTML <em>elements</em>. When writing HTML, we tell browsers the type of each element by using HTML <em>tags</em>.
+          <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48723444">This video</a> explains the distinction well if you can view it.
+        </p>
+      </div>
+    </div>
+    <div class="summary" id="Stage0_Comps">
+      <div class="sum_title">
+        Why Computers are Literal - Not Stupid
+      </div>
+      <div class="sum_detail">
+        <p>
+          Computers do only what they are told because they interpret instructions literally. This makes them very unforgiving since a small mistake by a programmer can cause huge problems in a program.
+        </p>
+        <p>
+          So you need to be a better programmer because <span class="c_green">Garbage in = Garbage out</span>.
+        </p>
+      </div>
+    </div>
+    <div class="summary" id="Stage0_inline">
+      <div class="sum_title">
+        Inline vs Block Elements
+      </div>
+      <div class="sum_detail">
+        <p>
+          HTML elements are either <em>inline</em> or <em>block</em>. Block elements form an "invisible box" around the content inside of them.
+        </p>
+      </div>
+    </div>
+  </div>  
+  <div class="subtitle" id="Stage1">
+    <h2>Stage 1: Creating a Structured Document with HTML</h2>
+    <div class="summary" id="Stage1_DevTool">
+      <div class="sum_title">
+        Developer Tools (in the Browser)
+      </div>
+      <div>
+        <p>
+          There are HTML editors and CSS editors. The Documenation Object Mode (DOM) knows what to do with elements to translate them properly.
+        </p>
+      </div>
+    </div>
+    <div class="summary" id="Stage1_tree">
+      <div class="sum_title">
+        The "tree-like structure" of HTML
+      </div>
+      <div class="sum_detail">
+        <p>
+          The <span class="c_green"> "tree-like structure" </span> comes from the fact that HTML elements can branch off. In a browser, this structure shows up as a series of nested boxes.
+        </p>
+      </div>
+    </div>
+    <div class="summary" id="Stage1_box">
+      <div class="sum_title">
+        The relationship between indented HTML and boxes
+      </div>
+      <div class="sum_detail">
+        <p>
+          When you read an HTML document as <em>text</em>, you see a wave of changing indentations going up and down the left side of the document. The more indented an element is, the more deeply nested it's corresponding "box" is.
+        </p>
+      </div>
+    </div>
+    <div class="summary" id="Stage1_Editor">
+      <div class="sum_title">
+        Text Editors (for programming)
+      </div>
+      <div class="sum_detail">
+        <p>
+          When writing code, programmers use special text editors (like Sublime Text for example). These editors make the programmer's life easier.
+        </p>
+      </div>
+    </div>
+    <div class="summary">
+      <div class="sum_title">
+        Adding CSS Style to HTML - Benefits 
+      </div>
+      <div class="sum_detail">
+        <p>
+          Repetition reduction is effecient and effective.
+        </p>
+        <p>
+          Repetition wastes alot of time and can cause many mistakes. If a change is need later, it is easier. Only a single place will need to be changed instead of hundreds. Therefore, less support is needed which makes easier and faster to maintain.
+        </p>
+        <p>
+          Standardization can be had by using the class in different parts of a web page. One style will control them all.
+        </p>
+      </div>
+    </div>
+    <div class="summary">
+      <div class="sum_title">
+        CSS
+      </div>
+      <div class="sum_detail">
+        <p>
+          CSS, Cascading Style Sheets, allow control of the style of related HTML elements. By using a class code in similar elements, they will all have the same font, color, size, ect.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="subtitle"  id="Stage2">
+    <h2>  Stage 2 Automate by Programming </h2>
+    <div class="summary">
+      <div class="sum_title">
+        Basics of Programming
+      </div>
+      <div class="sum_detail">
+        <p>
+          A computer program is used to do tasks that would require manual repetition so that it is efficient and effective.  A computer will follow the instructions in a program to accomplish a specific task.  There are many programs but the one we will use is called Python.
+        </p>
+        <p>
+          Strings and Variables are an essential part of most programming languages and is a way to pass inputs into the program.  Strings hold alphanumeric characters like <span class="c_green"> text='Hello' or text ='2' </span>  and are in quotes.  Variables are assigned a value and the value can be reassigned.  Assignment of a value in Python, happens in a line like <span class="c_green"> counter = 100 </span>  were counter is assigned a number of 100.  
+        </p>
+        <p>
+          The equal sign can mean different things.  in a line of code <span class="c_green"> 4-1=3 </span> , the equal sign means the same as. However in a line of code <span class="c_green"> counter=100 </span>, the equal means take the value of.
+        </p>
+        <p>
+          Variables are very useful in programming.  Variables are given names that tell what they do so this make the program understandable to others especially programs that have to support it later in time.  They store data and allow the data to be inputs to the other places in the program.
+        </p>
+      </div>
+    </div>
+    <div class="summary">
+      <div class="sum_title">
+        Functions(also called Procedures)
+      </div>
+      <div class="sum_detail">
+        <p>
+          Functions are groups of code that manipulate input to produce an output.  A simple function would be to take an income and apply a tax rate to determine the amount of tax owed.  The inputs would be the income and tax rate and the output would be the tax owed.
+        </p>
+        <p>
+          In Python, functions start with the word 'def' and the functions name with a colon afterwards.  The body would be the instructions and then the required output would be returned. Using the example above we could do:
+        </p>
+
+         <ul style="list-style-type:none">
+          <li>1. def tax_owed(inc,tax):</li>
+          <li>2. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; amt=0</li>
+          <li>3. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; amt = inc * tax</li>
+          <li>4. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return amt</li>
+          <li>5. print "Tax Owed is " + str(tax_owed(1000,.1))</li>
+        </ul>
+        <p>
+
+          The function is tax_owed and it returns 100 (1000*.1).  Then Python prints the string and the function's output for "Tax Owed is 100.0"
+        </p>
+        <p>
+          Once a function is defined, it be  used over and over again - helping to reduce repetition, reduce errors, and save time. If the return was forgotten in the function then a 'None' would be the result.  In Python, letter case and indentions are very important. The <span class="c_green"> != </span>  means not equal and <span class="c_green"> == </span> means equal.  The <span class="c_green"> # </span>  comments out the line of code and three quotes will comment out multiple lines. 
+        </p>
+        <p>
+          Other important concepts are: 
+        </p>
+        <p>
+          If/Else statements allow a selection based on conditions that are met.  An example would be when taxes are only owed if the income is over $5, then an if statment would be needed to check if the income is over $5. If it is then return the tax owed else the function would return zero.
+        </p>
+        <p>
+          Loops allow for block of information to be analyzed to see if the function will apply.  
+          A While loops will execute as long as the test expression is valid. It will usually contain at least one if statement and a counter on the while test expression so the while loop will end and not become an infinite loop.
+          A For Loop does not need the above because the loop is only being executed on a defined 'List'.  So if we had a list of 10 incomes the were in a 'List'.  The For loop would look at each of the 10 incomes and perform the task in the function.  A Python defined list would look like <span class="c_green"> list_income=[0,1,2,...,9] </span>. 
+        </p>
+        <p>
+          Lists are different than strings because they can hold anything like numbers/text and they can be changed. 
+          Lists can be Mutations or Alisings.
+          Mutations change the list so if a list of 4 strings is appended to add a string then the list increases to 5 strings.  
+          Alisings is two different ways to refer to the same object.  In the example in class was a good one -it used two ways to refer to Bond are James Bond and 007.  
+          An empty list is <span class="c_green"> list=[] </span>.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="subtitle" id="Stage3">
+    <h2>  Stage 3: Object Oriented Programming (OOP)</h2>
+    <div class="summary">
+      <div class="sum_title">
+        Basis
+      </div>
+      <div class="sum_detail">
+        <p>
+          Object Oriented Programming (OOP) is designed by making them out of objects that interact with each other. They are class-based, meaning that objects are instances of classes.  In Python, when calling a class function (like turtle), it calls the init function and it creates space in memory for the new object of the class (like Brad).  This object can then access methods like forward and right in the Turtle class. 
+        </p>
+        <p>
+           OOP is extremely helpful in programs especially large ones.  For example, all tax rates were listed repeatedly in code in 27 files. So when a change is needed, a programmer would have to go through all the files and change the tax rates. Then all those changes would need to be tested and placed into production.  If the tax rates are put in an OOP's tax class, this would be the only change needed.  It is much simpler for the programmer and testers.  It reduces repetition, which reduces operational risks (ie errors and not meeting the project's deadline) and is more efficient and effective.
+        </p>
+        <p>
+           This requires "Abstract thinking".  This means finding similarity amongst different things. For example, in this nanodegree, it would be unfeasible for a programmer to exclusively program each of the hundred of web pages individually. This makes OOP needed to generate similar code to produce the HTML for different web pages and degree programs.  Also in the HTML, we made all the titles and descriptions to have the same class names by type. So that in the CSS, we could use only one set of characteristics to control what each type (titles or descriptions) look like as a group.  This saved unnecessary repetition and reduced the risk of errors.
+        </p>
+      </div>
+    </div>
+    <div class="summary">
+      <div class="sum_title">
+        Key Words
+      </div>
+      <div class="sum_detail">
+        <p>
+          <span class="c_green">Python Standard Library:</span>  Python has many common functions that are very helpful to a large group of people.  They include them in a Standard Library.  Functions like webbrowser, timer, and operating system functions like os.chdir (change dir) or os.getcwd (current dir).  
+        </p>
+        <p>
+          <span class="c_green">Abstraction:</span> is the hiding of detail of the Python Standard Library.  
+        </p>
+        <p> 
+          <span class="c_green">Class:</span> is a standard way to perform certain function or actions.  The class name starts with a captial letter.
+        </p>
+        <p>
+          <span class="c_green">Class Variables:</span> are variables defined in the class and is designated by all caps in their name.
+        </p>
+        <p>
+          <span class="c_green">Instance/object:</span> of a class is function in the class called “Init” that creates space in memory to create the instance or object of the class.  Many instances/objects can be initialized.
+        </p>
+        <p>
+          <span class="c_green">Method:</span> is a function within a class. The first argument (methods must always take at least one argument-self) is always the instance of the class on which the function is invoked.
+        </p>
+        <p>
+          <span class="c_green">Self:</span> is the class variable that is the object itself.
+        </p>
+        <p>
+          <span class="c_green">Instant Variables:</span> are varables that are defined in the class and can be different for each instance/object of the class.
+        </p>
+        <p>
+           <span class="c_green">Instant Methods:</span> are functions defined in the class and associated with the instant/object.
+        </p>
+        <p>
+           <span class="c_green">Inheritance:</span> is very important and allows any parent variables/methods to be automatomattically passed to any child object 
+        </p>
+        <p>
+           <span class="c_green">Method Overriding:</span> is when a child has the same method as the parent object and the child will override it.
+        </p>
+        <p>
+           <span class="c_green">Module:</span> is a file containing Python definitions and statements.
+        </p>
+      </div>
+    </div>
+    <div class="summary">
+      <div class="sum_title">
+        Programming Video on Classes
+      </div>
+      <div class="video_fmt">
+        <p>
+          <iframe width="854" height="510" src="https://www.youtube.com/embed/vSznJAwSd78" allowfullscreen>
+          </iframe>
+        </p>
+      </div>
+    </div>
+  </div> 
+    <div class="subtitle" id="Stage4">
+    <h2> Stage 4: Web Server - Allowing Comments</h2>
+    <div class="summary" id="Stage4_Vocab">
+      <div class="sum_title">
+        Vocabulary
+      </div>
+      <div class="sum_detail">
+        <p>
+          Vocabulary:
+        </p>
+        <p>
+           <span class="c_green">Network:</span> is a group of items that can communicate with even though they are not all directly connected.
+        </p>
+        <p>
+           <span class="c_green">Latency:</span> is the time it takes a message to get from the source to the destination.connected.
+        </p>
+        <p>
+           <span class="c_green">Bandwidth:</span> is the amount of information that can be transmitted per unit of time.connected.
+        </p>
+        <p>
+           <span class="c_green">Bit:</span> is the smallest unit of information where 0=no and 1=yes.
+        </p>
+        <p>
+           <span class="c_green">Protocol:</span> is a set of rules to tell how two can talk to each other.connected.
+        </p>
+      </div>
+    </div>
+    <div class="summary" id="Stage4_Server">
+      <div class="sum_title">
+        Server
+      </div>
+      <div class="sum_detail">
+        <p>
+          <span class="c_green">Servers</span> are computers running a server programs that responds to network requests. Servers will deliver either a static or a dynamic response depending on the content type requested. Static responses are pre-written files like images that are requested. Dynamic responses is built on-the-fly by programs running on the server. 
+        </p>
+        <p>
+          <span class="c_green">HyperText Transfer Protocol (HTTP)</span> is the most common protocol used on the world wide web.  HTTP is  how we (a client) communicate with a server. Our browser connects to the URL(Uniform Resource Locator).  The URL example: http://www.google.com/index where http is the protocol, the host is google, and the path is /index.  The two most important methods we learned are GET and POST.  
+        </p>
+        <p>
+          <span class="c_green">GET:</span> A GET is used for fetching documents. A client sends a GET request to a server and the server sends a response like a website to display. A GET request is a specific method of the HTTP protocol. Then it sends requests, asking the server to give responses. The request line example is |GET /path HTTP/1.1 |which is  METHOD /path HTTP/version. The Server then reads this information and acts upon it. GET requests include the query parameters and values into the URL - therefore they also have a limited length of 2k characters.  These parameters are in the URL.  They are ok to cache and should not change servers. 
+        </p>
+        <p>
+          <span class="c_green">POST:</span> A POST requests alter data on the Server. POST requests on the other hand put them into the HTTP headers (after the headers) and parameters are in the body. There is no maximum limit but this can be configured. It is used for updating data.  Unlike the GET, it is not ok to cache but it is ok to change servers.
+        </p>
+      </div>
+    </div>
+    <div class="summary" id="Stage4_val">
+      <div class="sum_title">
+        Validation of Input
+      </div>
+      <div class="sum_detail">
+        <p>
+          Validation is verification on the server side that only expected data is received. In the case of users submitting data via html forms, a defined set of input would always be expected. The server should not process just any data sent because a user can maliciously input large amounts of data to slow down or corrupt the server.  This will prevent other users from using the website.
+        </p>
+        <p>
+        There are many ways to ensure the server receives only valid data like using a drop-down menu items or buttons would help but a malicious user can always mimic a form input and send data anyway. The most effective way is to verify all received data for compliance with expected data formats. 
+       </p>
+       <p>
+        We used Jinja and it security features.  It has an autoescape feature which is a secure procedure when building websites to avoid accidental oversight of security openings like entering HTML code in an Input box on a website.
+       </p>
+      </div>
+    </div>
+    <div class="summary" id="Stage4_Temp">
+      <div class="sum_title">
+        HTML Templates and Abstraction
+      </div>
+      <div class="sum_detail">
+        <p>
+          Templates are good because it keeps different languages separated.  This also allows websites to have standard headers, footers and ect.  Python is used as the main file that calls different HTML files that mesh into one website.  This allows for standardization of a companies websites.  Separate developers can work on different pieces.  HTML code and CSS styles can be used minimally so if changes are needed only one file would need to be changed and not every webpage. This saves time, effort, and reduces the chance of mistakes!
+        </p>
+       <p>
+        We used Jinja and Google App Engine.  Jinja has its own library which allows using Templates.  It has its own programming logic for substituition, Loops, and If Then Elses.  
+       </p>
+       <p>
+        Inheritance is also very useful. Jinja can reuse templates by inheritance of parent template elements to the child templates. The Jinja parent HTML template files and child templates go in the same folder. This gives us standardized headers or footers.
+       </p>
+       <p>
+        Abstraction is the hiding of detail of the Python Standard Library that we learned in Stage 3.</p>
+       <p>
+        The benefits are to separate different types of code (Python from html), maintain code editor syntax highlighting, makes code more readable and secure websites.  Html that is easier to modify.  Template inheritance for html 'plug-in' functionality and consistency across pages. Repeated html elements with simple Jinja syntax and can use items like if-then-else with Jinja syntax.
+        </p>
+      </div>
+    </div>
+  </div>  
+</body>  
+{% endblock %}

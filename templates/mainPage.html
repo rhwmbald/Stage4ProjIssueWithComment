@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<body>
+	<div class="mainH1" id="mainH1" >  
+	  <h1>Main Page</h1>
+	  <a href="/notes">View Notes Stage 0-4</a>  
+	</div>
+	<form method="post" action="/">
+		<br>
+		<p>
+			Add information and click 'Add Comment' button.
+		</p>
+		<label>
+			Your name (or alias):
+			<input type="text" name="authors" value="no_name">
+		</label>
+		<label>
+			Comment:
+			<input type="text" name="contents" value="none" id="commentBox">
+		</label>
+		<br>
+		<div >
+			<input type="submit" value="Add Comment" id="submit">
+		</div>
+		<hr>
+	</form>
+	{% for tPost in posts %}
+	  <div>
+	  	<strong> {{tPost["authors"]}} </strong> wrote:
+      	<blockquote> {{tPost["contents"]}} </blockquote>
+      </div>
+	{% endfor %}
+</body>
+{% endblock content %}
